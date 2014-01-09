@@ -1,0 +1,50 @@
+body {
+	text-align: center;
+	font-family: Helvetica;
+    text-shadow: 5px 5px 10px #000000;
+    color: white;
+    background: url('bg.jpg');
+    font-size: 22px;
+}
+
+#container {
+	background-color: #0099FF;
+	margin: 0 auto;
+    height: 450px;
+    width: 450px;
+    box-shadow: 5px 5px 15px #000000;
+    border: 3px solid #000000;
+}
+
+.gameboard {
+    width: 148px;
+    height: 148px;
+    float: left;
+    border: 1px solid black;
+    font-size: 130px;
+    text-align: center;
+}
+
+.gameboard:hover {
+	background-color: #FFFFFF;
+    border: 1px outset #00FF00;
+    color: #0099FF;
+}
+
+aside {
+    float:left;
+    padding: 75px;
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+}
+
+#scores{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#outcome{
+    font-weight: bold;
+    font-size: 50px;
+}
