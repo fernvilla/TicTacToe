@@ -7,6 +7,7 @@ var move = 0;
 var play = true;
 
 function playGame(x) {
+    //place X's and O's and increment 'move' variable
     if (play) {
         if ((move % 2 == 0) && (document.getElementById(x).innerHTML == "")) {
     	   var y = document.getElementById(x).innerHTML = "X";
@@ -36,7 +37,7 @@ function playGame(x) {
     {
     	document.getElementById("outcome").innerHTML = player1 + " wins!";
         play = false;
-        p1Score++;
+        p1Score++; //add to player1 score counter
         document.getElementById("player1").innerHTML = "Player 1: " + p1Score;
     }
     //Check for Player 2 win;
@@ -44,14 +45,14 @@ function playGame(x) {
     {	
         document.getElementById("outcome").innerHTML = player2 + " wins!";
         play = false;
-        p2Score++;
-        document.getElementById("player2").innerHTML = "Player 2: " + p2Score;
+        p2Score++;//add to player2 counter
+        document.getElementById("player2").innerHTML = "Player 2: " + p2Score; 
     }
     //If board is full and no win, set to draw
     else if (move == 9) 
     {
         document.getElementById("outcome").innerHTML = "Draw!";
-        ties++;
+        ties++; //add to tie counter
         document.getElementById("ties").innerHTML = "Ties: " + ties;
     }  
 }
@@ -71,12 +72,13 @@ function restart() {
     document.getElementById("box8").innerHTML = "";
     document.getElementById("box9").innerHTML = ""; 
 
-    //initial player move text
+    //initial player move text reset
     document.getElementById("outcome").innerHTML = "Player 1's move!";
 }
 
+//reset total scores 
 function clear() {
-    document.getElementById("player1").innerHTML = "0";
-    document.getElementById("player2").innerHTML = "0";
-    document.getElementById("ties").innerHTML = "0";
+    document.getElementById("player1").innerHTML = 0;
+    document.getElementById("player2").innerHTML = 0;
+    document.getElementById("ties").innerHTML = 0;
 }
