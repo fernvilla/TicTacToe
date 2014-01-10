@@ -12,7 +12,7 @@ body {
 	margin: 0 auto;
     height: 450px;
     width: 450px;
-    box-shadow: 20px 20px 15px #000000;
+    box-shadow: 15px 15px 10px #000000;
     border: 2px solid #93E0FA;
 }
 
@@ -32,7 +32,7 @@ body {
     box-shadow: 15px 10px 10px #000000;
 }
 
-#left {
+aside {
     float:left;
     padding: 30px 80px;
     font-size: 20px;
@@ -47,7 +47,7 @@ body {
 button {
     height: 30px;
     width: 120px;
-    box-shadow: 15px 15px 15px #000000;
+    box-shadow: 10px 10px 10px #000000;
     background-color: #0099FF;
     color: #FFFFFF;
     border: 1px solid #000000;
