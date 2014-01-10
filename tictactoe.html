@@ -8,14 +8,19 @@
 
 	<body>
 		<h1>Tic Tac Toe</h1>
-		<span id="outcome">X's move!</span><br /><br />
+
+		<span id="outcome">Player 1's move!</span><br /><br />
 		
 		<aside>
 			<span id="scores">PLAYER SCORES</span> 
 			<br/><br/>
-			<span id="player1">Player 1: </span>
+			<span id="player1">Player 1: 0</span>
 			<br/>
-			<span id="player2">Player 2:</span>
+			<span id="player2">Player 2: 0</span>
+			<br />
+			<span id="ties">Ties: 0</span>
+			<br /><br />
+			<button id="clear" onclick="clear()">Clear Totals</button>
 		</aside>
 
 		<div id ="container">
@@ -38,7 +43,7 @@
 			<div id="box9" class="gameboard" onclick="playGame('box9')"></div>
 		</div>
 		<br/>
-		<button id="start" onclick="restart()"> RESTART</button>
+		<button id="start" onclick="restart()">RESTART GAME</button>
 		
 
 	</body>
