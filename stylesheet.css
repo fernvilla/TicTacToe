@@ -4,7 +4,7 @@ body {
     text-shadow: 5px 5px 10px #000000;
     color: white;
     background: url('bg.jpg');
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #container {
@@ -44,7 +44,18 @@ aside {
     font-weight: bold;
 }
 
+button {
+    height: 30px;
+    width: 80px;
+    box-shadow: 5px 5px 15px #000000;
+    background-color: #0099FF;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 13px;
+}
+
 #outcome{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 25px;
+    text-align: center;
 }
