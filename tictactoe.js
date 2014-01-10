@@ -11,12 +11,12 @@ function playGame(x) {
     if (play) {
         if ((move % 2 == 0) && (document.getElementById(x).innerHTML == "")) {
     	   var y = document.getElementById(x).innerHTML = "X";
-           document.getElementById("outcome").innerHTML = player2 + "'s move!";
+           document.getElementById("outcome").innerHTML = player2 + "'s Move!";
            move++;
         }
         else if ((move % 2 == 1) && (document.getElementById(x).innerHTML == "")){
            var z = document.getElementById(x).innerHTML = "O";
-           document.getElementById("outcome").innerHTML = player1 + "'s move!";
+           document.getElementById("outcome").innerHTML = player1 + "'s Move!";
            move++;
         }
     }
@@ -35,7 +35,7 @@ function playGame(x) {
     //Check for Player 1 win
     if (((box1 == y) && (box2 == y) && (box3 == y)) || ((box4 == y) && (box5 == y) && (box6 == y)) || ((box7 == y) && (box8 == y) && (box9 == y)) || ((box1 == y) && (box5 == y) && (box9 == y)) || ((box7 == y) && (box5 == y) && (box3 == y))  || ((box1 == y) && (box4 == y) && (box7 == y))  || ((box2 == y) && (box5 == y) && (box8 == y)) || ((box3 == y) && (box6 == y) && (box9 == y))) 
     {
-    	document.getElementById("outcome").innerHTML = player1 + " wins!";
+    	document.getElementById("outcome").innerHTML = player1 + " Wins In " + move + " Moves!";
         play = false;
         p1Score++; //add to player1 score counter
         document.getElementById("player1").innerHTML = "Player 1: " + p1Score;
@@ -43,7 +43,7 @@ function playGame(x) {
     //Check for Player 2 win;
     else if (((box1 == z) && (box2 == z) && (box3 == z)) || ((box4 == z) && (box5 == z) && (box6 == z)) || ((box7 == z) && (box8 == z) && (box9 == z)) || ((box1 == z) && (box5 == z) && (box9 == z)) || ((box7 == z) && (box5 == z) && (box3 == z))  || ((box1 == z) && (box4 == z) && (box7 == z))  || ((box2 == z) && (box5 == z) && (box8 == z)) || ((box3 == z) && (box6 == z) && (box9 == z))) 
     {	
-        document.getElementById("outcome").innerHTML = player2 + " wins!";
+        document.getElementById("outcome").innerHTML = player2 + " Wins In " + move + " Moves!";
         play = false;
         p2Score++;//add to player2 counter
         document.getElementById("player2").innerHTML = "Player 2: " + p2Score; 
@@ -73,12 +73,12 @@ function restart() {
     document.getElementById("box9").innerHTML = ""; 
 
     //initial player move text reset
-    document.getElementById("outcome").innerHTML = "Player 1's move!";
+    document.getElementById("outcome").innerHTML = "Player 1's Move!";
 }
 
 //reset total scores 
 function clear() {
-    document.getElementById("player1").innerHTML = 0;
-    document.getElementById("player2").innerHTML = 0;
-    document.getElementById("ties").innerHTML = 0;
+    document.getElementById("player1").innerHTML = "0";
+    document.getElementById("player2").innerHTML = "0";
+    document.getElementById("ties").innerHTML = "0";
 }

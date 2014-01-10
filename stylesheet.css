@@ -12,8 +12,8 @@ body {
 	margin: 0 auto;
     height: 450px;
     width: 450px;
-    box-shadow: 5px 5px 15px #000000;
-    border: 3px solid #000000;
+    box-shadow: 20px 20px 15px #000000;
+    border: 2px solid #93E0FA;
 }
 
 .gameboard {
@@ -27,15 +27,15 @@ body {
 
 .gameboard:hover {
 	background-color: #FFFFFF;
-    border: 1px outset #00FF00;
+    border: 1px outset #93E0FA;
     color: #0099FF;
+    box-shadow: 15px 10px 10px #000000;
 }
 
-aside {
+#left {
     float:left;
-    padding: 75px;
+    padding: 30px 80px;
     font-size: 20px;
-    text-align: center;
     text-align: left;
 }
 
@@ -47,7 +47,7 @@ aside {
 button {
     height: 30px;
     width: 120px;
-    box-shadow: 5px 5px 15px #000000;
+    box-shadow: 15px 15px 15px #000000;
     background-color: #0099FF;
     color: #FFFFFF;
     border: 1px solid #000000;
