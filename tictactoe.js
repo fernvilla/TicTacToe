@@ -57,7 +57,7 @@ function playGame(x) {
     }  
 }
 
-function restart() {
+function restartGame() {
     move = 0; //resets first move to letter X
     play = true; //after check win, needs to be true for playGame function to restart
 
@@ -77,8 +77,8 @@ function restart() {
 }
 
 //reset total scores 
-function clear() {
-    document.getElementById("player1").innerHTML = "0";
-    document.getElementById("player2").innerHTML = "0";
-    document.getElementById("ties").innerHTML = "0";
+function clearBoard() {
+    document.getElementById("player1").innerHTML = "Player 1: 0";
+    document.getElementById("player2").innerHTML = "Player 2: 0";
+    document.getElementById("ties").innerHTML = "Ties: 0";
 }
