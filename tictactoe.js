@@ -38,7 +38,7 @@ function playGame(x) {
     	document.getElementById("outcome").innerHTML = player1 + " Wins In " + move + " Moves!";
         play = false;
         p1Score++; //add to player1 score counter
-        document.getElementById("player1").innerHTML = "Player 1: " + p1Score;
+        document.getElementById("player1").innerHTML = "Player 1: &nbsp;" + p1Score;
     }
     //Check for Player 2 win;
     else if (((box1 == z) && (box2 == z) && (box3 == z)) || ((box4 == z) && (box5 == z) && (box6 == z)) || ((box7 == z) && (box8 == z) && (box9 == z)) || ((box1 == z) && (box5 == z) && (box9 == z)) || ((box7 == z) && (box5 == z) && (box3 == z))  || ((box1 == z) && (box4 == z) && (box7 == z))  || ((box2 == z) && (box5 == z) && (box8 == z)) || ((box3 == z) && (box6 == z) && (box9 == z))) 
@@ -46,14 +46,14 @@ function playGame(x) {
         document.getElementById("outcome").innerHTML = player2 + " Wins In " + move + " Moves!";
         play = false;
         p2Score++;//add to player2 counter
-        document.getElementById("player2").innerHTML = "Player 2: " + p2Score; 
+        document.getElementById("player2").innerHTML = "Player 2: &nbsp;" + p2Score; 
     }
     //If board is full and no win, set to draw
     else if (move == 9) 
     {
         document.getElementById("outcome").innerHTML = "Draw!";
         ties++; //add to tie counter
-        document.getElementById("ties").innerHTML = "Ties: " + ties;
+        document.getElementById("ties").innerHTML = "Ties: &nbsp;" + ties;
     }  
 }
 
@@ -77,8 +77,13 @@ function restartGame() {
 }
 
 //reset total scores 
-function clearBoard() {
-    document.getElementById("player1").innerHTML = "Player 1: 0";
-    document.getElementById("player2").innerHTML = "Player 2: 0";
-    document.getElementById("ties").innerHTML = "Ties: 0";
+function clearScores() {
+    //set variables back to zero to prevent increments after clearing score
+    p1Score = 0; 
+    p2Score = 0; 
+    ties = 0;
+    //clear scoreboard html data
+    document.getElementById("player1").innerHTML = "Player 1: &nbsp; 0";
+    document.getElementById("player2").innerHTML = "Player 2: &nbsp; 0";
+    document.getElementById("ties").innerHTML = "Ties: &nbsp; 0";
 }

@@ -12,15 +12,22 @@
 		<span id="outcome">Player 1's move!</span><br /><br />
 		
 		<aside>
-			<span id="scores">PLAYER SCORES</span> 
-			<br/><br/>
-			<span id="player1">Player 1: 0</span>
-			<br/>
-			<span id="player2">Player 2: 0</span>
+			<table>
+				<tr>
+					<th>PLAYER Scores</th>
+				</tr>
+				<tr>
+					<td><span id="player1">Player 1: &nbsp; 0</span></td>
+				</tr>
+				<tr>
+					<td><span id="player2">Player 2: &nbsp; 0</span></td>
+				</tr>
+				<tr>
+					<td><span id="ties">Ties: &nbsp; 0</span></td>
+				</tr>
+			</table>
 			<br />
-			<span id="ties">Ties: 0</span>
-			<br /><br />
-			<button onclick="clearBoard()">Clear Totals</button>
+			<button id="clear" ="clearScores()">Clear Totals</button>
 		</aside>
 
 		<div id ="container">
@@ -36,7 +43,7 @@
 		</div>
 
 		<br/>
-		<button onclick="restartGame()">RESTART GAME</button>
+		<button id="restart" onclick="restartGame()">RESTART GAME</button>
 		<br/>
 
 	</body>

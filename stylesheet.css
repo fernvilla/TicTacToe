@@ -32,6 +32,12 @@ body {
     box-shadow: 15px 10px 10px #000000;
 }
 
+#outcome {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
 aside {
     float:left;
     padding: 30px 80px;
@@ -39,7 +45,28 @@ aside {
     text-align: left;
 }
 
-#scores{
+table {
+    box-shadow: 15px 15px 10px #000000;
+}
+
+table, th {
+    border: 1px solid #93E0FA;
+    background-color: #0099FF;  
+    width: 200px; 
+}
+
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#scores {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -54,8 +81,11 @@ button {
     font-size: 13px;
 }
 
-#outcome{
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
+#clear {
+    margin: 8px 40px;
 }
+
+#restart{
+    margin-top: 8px; 
+}
+
